@@ -9,7 +9,8 @@ require('dotenv').config();
 async function bootstrap() {
   const app = await NestFactory.create<NestExpressApplication>(ApplicationModule);
   app.enableCors();
-  app.use(morgan('common', {stream: fs.createWriteStream('../../mad.log', {flags: 'a'})}));
+  // app.use(morgan('common', {stream: fs.createWriteStream('../../mad.log', {flags: 'a'})}));
+  app.use(morgan('common'));
   app.use(morgan('dev'));
   app.use(helmet());
 
