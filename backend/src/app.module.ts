@@ -12,7 +12,7 @@ require('dotenv').config();
   imports: [
     SignupModule,
     TypegooseModule.forRoot(
-      process.env.MONGO_URL,
+      process.env.MONGO_URL || "FAKE STRING",
       {
         useNewUrlParser: true,
       },
