@@ -22,7 +22,7 @@ export default class Validate extends Component {
 
   handleSubmit() {
     axios
-      .get(`http://18.133.4.25:3001/api/signup/fresher/verify?id=${this.state.match}`)
+      .get(`/api/signup/fresher/verify?id=${this.state.match}`)
       .then(() => {
         this.setState({ response: 'Success' });
       })

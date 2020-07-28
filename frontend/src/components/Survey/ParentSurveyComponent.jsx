@@ -32,7 +32,7 @@ class ParentSurveyComponent extends Component {
   async onCompleteComponent(results) {
     this.setState({ isCompleted: true });
     const response = await axios.post(
-      "http://18.133.4.25:3001/api/signup/parent",
+      "/api/signup/parent",
       this.serializeResults(results.data)
     );
     if (response.status === 201) {

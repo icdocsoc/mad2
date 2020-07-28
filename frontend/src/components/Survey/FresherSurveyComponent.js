@@ -29,7 +29,7 @@ class SurveyComponent extends Component {
   async onCompleteComponent(results) {
     this.setState({ isCompleted: true });
     const response = await axios.post(
-      'http://18.133.4.25:3001/api/signup/fresher',
+      '/api/signup/fresher',
       this.serializeResults(results.data),
     );
     if (response.status === 201) {
