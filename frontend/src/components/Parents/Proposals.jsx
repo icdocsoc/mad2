@@ -39,7 +39,7 @@ class Proposals extends Component {
     } else {
       try {
         await axios.post(
-          "http://18.133.4.25:3000/api/signup/parent/propose",
+          "http://18.133.4.25:3001/api/signup/parent/propose",
           {
             partnerShortcode: username
           },
@@ -63,7 +63,7 @@ class Proposals extends Component {
 
   async propose(username) {
     await axios.post(
-      "http://18.133.4.25:3000/api/signup/parent/propose",
+      "http://18.133.4.25:3001/api/signup/parent/propose",
       {
         partnerShortcode: username
       },
