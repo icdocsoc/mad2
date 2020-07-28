@@ -38,7 +38,7 @@ class ParentPage extends Component {
 
     if (loggedIn) {
       axios
-        .get("/api/signup/parent/status", {
+        .get("http://18.133.4.25:3001/api/signup/parent/status", {
           withCredentials: true
         })
         .then(data => {
