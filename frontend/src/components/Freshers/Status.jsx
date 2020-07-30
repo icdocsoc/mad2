@@ -22,7 +22,7 @@ export default class Status extends Component {
 
   handleSubmit() {
     axios
-      .get("http://18.133.4.25:3001/api/signup/fresher/status?id=" + this.state.match, {
+      .get("https://d2cych0n3xc73q.cloudfront.net/api/signup/fresher/status?id=" + this.state.match, {
         withCredentials: true
       })
       .then(data => {

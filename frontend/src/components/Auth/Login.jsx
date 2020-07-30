@@ -23,7 +23,7 @@ export default class Login extends Component {
     const password = event.target.password.value;
     try {
       await axios.post(
-        "http://18.133.4.25:3001/api/login",
+        "https://d2cych0n3xc73q.cloudfront.net/api/login",
         {
           username,
           password
@@ -33,7 +33,7 @@ export default class Login extends Component {
         }
       );
       
-      const response = await axios.get("http://18.133.4.25:3001/api/me", {
+      const response = await axios.get("https://d2cych0n3xc73q.cloudfront.net/api/me", {
         withCredentials: true
       });
       localStorage.expiry = response.data.exp;
