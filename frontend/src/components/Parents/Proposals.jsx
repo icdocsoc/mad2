@@ -39,7 +39,7 @@ class Proposals extends Component {
     } else {
       try {
         await axios.post(
-          "https://d2cych0n3xc73q.cloudfront.net/api/signup/parent/propose",
+          "/api/signup/parent/propose",
           {
             partnerShortcode: username
           },

@@ -38,7 +38,7 @@ class ParentPage extends Component {
 
     if (loggedIn) {
       axios
-        .get("https://d2cych0n3xc73q.cloudfront.net/api/signup/parent/status", {
+        .get("/api/signup/parent/status", {
           withCredentials: true
         })
         .then(data => {
