@@ -239,9 +239,7 @@ export class SignupService {
       .exec();
   }
 
-  // Disable on host
   async allFamilies(): Promise<Family[]> {
-    return [];
     return await this.familyModel
     .find()
     .populate([
@@ -261,7 +259,6 @@ export class SignupService {
   }
 
   async allUnallocatedKids(): Promise<Fresher[]> {
-    return [];
     return await this.fresherModel.find({family: null, verified: true});
   }
 
@@ -282,7 +279,6 @@ export class SignupService {
   }
 
   async randoms(freshers: any[]): Promise<void> {
-    return;
     const newFreshers = freshers.map(f => {
       return new this.fresherModel({
         student: {
@@ -373,7 +369,6 @@ export class SignupService {
   }
 
   async allocate(allocations: any[]): Promise<void> {
-    return;
     const toSave = allocations.map(
       alloc => this.saveAllocation(alloc.fresher, alloc.family),
     );

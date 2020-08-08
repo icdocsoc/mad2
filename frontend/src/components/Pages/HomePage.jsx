@@ -34,16 +34,14 @@ class HomePage extends Component {
                   events together. Each family will also get a termly budget
                   that they can decide how to spend themselves.
                 </CardText>
-
-                <CardText>
+                {/* <CardText>
                   <b>Freshers sign up has opened! </b>
                   Click
                   {' '}
                   <a href="/fresher">here</a>
                   {' '}
                   to sign up! Fill in the sign up form and check your Imperial College email (i.e. ab1219@ic.ac.uk)
-
-                </CardText>
+                </CardText> */}
                 <CardText>
                   <b>Once you have signed up, we will inform you via email when you have been allocated a family!</b>
                 </CardText>
