@@ -20,7 +20,7 @@ import {ParentStatus} from './models/dto/responses/parentStatus.model';
 export class SignupController {
   constructor(private readonly signupService: SignupService) {}
 
-  @Post('fresher')
+  // @Post('fresher')
   async fresherSignup(@Body() fresher: Fresher): Promise<Fresher> {
     return await this.signupService.createFresher(fresher);
   }
@@ -68,22 +68,26 @@ export class SignupController {
     return await this.signupService.parentStatus(shortcode);
   }
 
-  @Get('all-families')
+  //Disable these on host
+  // @Get('all-families')
   async allFamilies(): Promise<any> {
     return await this.signupService.allFamilies();
   }
 
-  @Get('all-unallocated-freshers')
+  //Disable these on host
+  // @Get('all-unallocated-freshers')
   async unallocatedFreshers(): Promise<any> {
     return await this.signupService.allUnallocatedKids();
   }
 
-  @Post('allocations')
+  //Disable these on host
+  // @Post('allocations')
   async allocate(@Body() allocations: any): Promise<void> {
     return await this.signupService.allocate(allocations);
   }
 
-  @Post('random-allocations')
+  //Disable these on host
+  // @Post('random-allocations')
   async randoms(@Body() freshers: any[]): Promise<void> {
     return await this.signupService.randoms(freshers);
   }
