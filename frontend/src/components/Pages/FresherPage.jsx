@@ -10,7 +10,9 @@ class FresherPage extends Component {
   render() {
     return (
       <div>
-        Fresher sign ups haven't opened yet!
+        <Container>
+          Fresher sign ups haven't opened yet!
+        </Container>
       </div>
     );
     return (
