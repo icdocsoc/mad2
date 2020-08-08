@@ -67,28 +67,4 @@ export class SignupController {
     const shortcode: string = req.user.user.Login;
     return await this.signupService.parentStatus(shortcode);
   }
-
-  //Disable these on host
-  // @Get('all-families')
-  // async allFamilies(): Promise<any> {
-  //   return await this.signupService.allFamilies();
-  // }
-
-  //Disable these on host
-  // @Get('all-unallocated-freshers')
-  // async unallocatedFreshers(): Promise<any> {
-  //   return await this.signupService.allUnallocatedKids();
-  // }
-
-  //Disable these on host
-  // @Post('allocations')
-  // async allocate(@Body() allocations: any): Promise<void> {
-  //   return await this.signupService.allocate(allocations);
-  // }
-
-  //Disable these on host
-  // @Post('random-allocations')
-  // async randoms(@Body() freshers: any[]): Promise<void> {
-  //   return await this.signupService.randoms(freshers);
-  // }
 }
