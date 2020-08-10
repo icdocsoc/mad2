@@ -98,14 +98,14 @@ class ParentPage extends Component {
                 <Family kids={kids} parent1={parent1} parent2={parent2} />
               )}
               {ready && loggedIn && signedUp && !accepted && (
-                <h1 style={{ textAlign: "center" }}>Sign ups are full.</h1>
+                //<h1 style={{ textAlign: "center" }}>Sign ups are full.</h1>
                 // To disable, comment below. uncomment above
-                // <Proposals to={to} from={from} getStatus={getStatus} />
+                <Proposals to={to} from={from} getStatus={getStatus} />
               )}
               {ready && loggedIn && !signedUp && (
-                <h1 style={{ textAlign: "center" }}>Sign ups are full.</h1>
+                //<h1 style={{ textAlign: "center" }}>Sign ups are full.</h1>
                 // To disable, comment below. uncomment above
-                // <ParentSurveyComponent getStatus={getStatus} />
+                <ParentSurveyComponent getStatus={getStatus} />
               )}
               {!loggedIn && <Login loginSuccess={this.checkLogin} />}
             </Col>
