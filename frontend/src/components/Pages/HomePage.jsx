@@ -73,6 +73,15 @@ class HomePage extends Component {
                   partner, your registration will be ignored.
                 </CardText>
                 <CardTitle>
+                  <h5><b>I've already signed up on the union(CGCU) website. Do I sign up here too?</b></h5>
+                </CardTitle>
+                <CardText>
+                  Yes, please do. If you haven't signed up on the union website,
+                   then you don't need to, as long as you sign up here. But even
+                   if you have signed up on the union website, please sign up here
+                   as well!
+                </CardText>
+                <CardTitle>
                   <h5><b>How will freshers be allocated?</b></h5>
                 </CardTitle>
                 <CardText>
