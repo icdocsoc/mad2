@@ -21,7 +21,7 @@ export class SignupController {
   constructor(private readonly signupService: SignupService) {}
 
   //Disable fresher signup
-  // @Post('fresher')
+  @Post('fresher')
   async fresherSignup(@Body() fresher: Fresher): Promise<Fresher> {
     return await this.signupService.createFresher(fresher);
   }
