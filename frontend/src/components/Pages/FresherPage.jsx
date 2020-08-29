@@ -11,13 +11,6 @@ class FresherPage extends Component {
     return (
       <div>
         <Container>
-          Fresher sign ups haven't opened yet!
-        </Container>
-      </div>
-    );
-    return (
-      <div>
-        <Container>
           <Row>
             <Col sm={1} />
             <Col sm={10}>
